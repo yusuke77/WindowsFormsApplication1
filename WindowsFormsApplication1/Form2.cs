@@ -12,20 +12,16 @@ namespace WindowsFormsApplication1
 {
     public partial class Form2 : Form
     {
-        public Form2(string val)
+
+        public Form2(string textvalue1)
         {
             InitializeComponent();
-
-            //string val;
-
-            label2.Text = val;
+            label2.Text = textvalue1;//フォーム１から受け取った文字列を表示
         }
-
+        //CLOSEボタンを押したとき
         private void button2_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Close();　//終了コマンド
         }
-
-    
     }
 }
