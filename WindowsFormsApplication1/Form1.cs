@@ -15,14 +15,13 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+
+            //branchの練習
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             //テキストボックスに文字列が打たれたものをtextvalueに保管し表示
-            //string textValue = textBox1.Text;
-            //label1.Text = textValue;
-            //上の二行を一文に変更
             label1.Text= textBox1.Text;
         }
 
@@ -30,11 +29,9 @@ namespace WindowsFormsApplication1
         {
             //テキストボックスに新たに文字列が打たれたものをtextvalue1に保管
             string textvalue1 = textBox1.Text;
-            //string val = textvalue1;
-            //上の一文を変更
 
             //newForm2の作成
-            Form2 form2 = new WindowsFormsApplication1.Form2(textvalue1);
+            Form2 form2 = new WindowsFormsApplication1.Form2( textvalue1);
             form2.Show(); //フォーム２を表示
         }
     }
